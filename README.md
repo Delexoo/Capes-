@@ -21,7 +21,7 @@
 • Run the program choose your Cape & Run Minecraft!
 
 
-Additional Information:
+# Additional Information:
 
 [!] Your Anti-Virus may go off soly because this is a newly created program.
 
