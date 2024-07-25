@@ -1,20 +1,33 @@
+# Coded using Python. (Modified by ChatGPT)
+
 import os
+
 import shutil
+
 import customtkinter as ctk
+
 from tkinter import messagebox
+
 from PIL import Image as PilImage
+
 import webbrowser
+
 import sys
 
-# Get the directory where the script is located
+#Get the directory where the script is located
+
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Global variables for target_filename and minecraft_skins_folder
+#Global variables for target_filename and minecraft_skins_folder
+
 target_filename = ""
+
 minecraft_skins_folder = ""
+
 capename = ""
 
-# Function to update the target_filename and path based on the selected cape
+#Function to update the target_filename and path based on the selected cape
+
 def select_cape(cape_name):
     global target_filename, minecraft_skins_folder, capename
 
@@ -53,7 +66,7 @@ def select_cape(cape_name):
         return
     show_main_page()
 
-# Function to show the main page
+#Function to show the main page
 def show_main_page():
     # Destroy the initial page and show the main cape selection interface
     for widget in app.winfo_children():
@@ -62,7 +75,7 @@ def show_main_page():
     # Define paths
     assets_folder = os.path.join(base_dir, "All Minecraft Capes")
 
-    # Define the capes file names
+    # Define all capes file names
     capes = {
         "2011": "2011_cape.png",
         "2012": "2012_cape.png",
@@ -134,7 +147,7 @@ def show_main_page():
     scrollable_frame = ctk.CTkScrollableFrame(master=app)
     scrollable_frame.pack(pady=20, padx=20, fill="both", expand=True)
 
-    # Create a donation button and make it clickable
+    # Create a donation button add my Linktree
     donation_button = ctk.CTkButton(master=app, text="Buy me Coffee!", text_color="black", command=lambda: webbrowser.open_new("https://linktr.ee/delexo"), corner_radius=10, width=120, height=30, fg_color="white")
     donation_button.place(x=10, y=app.winfo_height()-50)
 
@@ -171,17 +184,17 @@ def show_main_page():
 
         col += 1
 
-# Initialize the app
+#Initialize the app
 app = ctk.CTk()
 app.title("Capes++ Client")
 app.geometry("700x700")
 app.resizable(False, False)  # Disable resizing
 
-# Set appearance mode and color theme
+#Set appearance mode and color theme
 ctk.set_appearance_mode("dark")  # Modes: "System" (default), "Dark", "Light"
 ctk.set_default_color_theme("blue")  # Themes: "blue" (default), "green", "dark-blue"
 
-# Create initial page
+#Create initial page
 welcome_label = ctk.CTkLabel(app, text="Welcome to Capes++", font=("Helvetica", 40))  # Updated font size
 welcome_label.pack(pady=10)
 
@@ -206,5 +219,5 @@ vanilla_button.pack(pady=10)
 cherry_blossom_button = ctk.CTkButton(app, text="Cherry Blossom Cape", command=lambda: select_cape("Cherry Blossom Cape"), width=300, height=60)
 cherry_blossom_button.pack(pady=10)
 
-# Run the application
+#Run the application
 app.mainloop()
