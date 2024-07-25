@@ -10,9 +10,12 @@
 # Instructions:
 
 • Download the Zip file that has ("All Minecraft Capes" & "Minecraft Cape Changer.exe")
+
 • Extract to Desktop.
+
 • Drag the "All Minecraft Capes" [Folder] onto your Desktop.
- Run Minecraft with a FREE Cape before you run the program.
+
+• Run Minecraft with a FREE Cape before you run the program.
 (This is so the Cape assets automatically loads for you in-game)
 
 • Run the program choose your Cape & Run Minecraft!
