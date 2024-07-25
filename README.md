@@ -1,3 +1,7 @@
+If you feel Safer you can download the Capes image files and change your cape manually.
+Or... You can use my program to change your Cape instantly. Feel Free to Visit - #README (Source Code)
+
+
 # 3 Requirements:
 
 • Works for Windows Operating Systems (I haven't tried any other operating systems)
