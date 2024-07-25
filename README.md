@@ -1,7 +1,9 @@
 # 3 Requirements:
 
 • Works for Windows Operating Systems (I haven't tried any other operating systems)
+
 • Currently works if you have at least one of the free Minecraft Capes (Migrator, TikTok, Twitch, Cherry Blossom, 15th Anni) (Will fix soon!)
+
 • Only works for version 1.8.9
 
 
