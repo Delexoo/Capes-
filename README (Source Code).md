@@ -1,15 +1,18 @@
 # ⬆️⬆️ Read this in (Code Tab / Code Mode) So its easier on your eyes.
 
+
 import os
 import shutil
 import customtkinter as ctk
 from tkinter import messagebox
 from PIL import Image as PilImage
 import webbrowser
-import sys
 
-# Get the directory where the script is located
-base_dir = os.path.dirname(os.path.abspath(__file__))
+# Get the user's desktop directory
+desktop_dir = os.path.join(os.path.join(os.environ['USERPROFILE']), 'OneDrive', 'Desktop')
+
+# Define paths
+assets_folder = os.path.join(desktop_dir, "Capes")
 
 # Global variables for target_filename and minecraft_skins_folder
 target_filename = ""
@@ -60,9 +63,6 @@ def show_main_page():
     # Destroy the initial page and show the main cape selection interface
     for widget in app.winfo_children():
         widget.destroy()
-
-    # Define paths
-    assets_folder = os.path.join(base_dir, "All Minecraft Capes")
 
     # Define the capes file names
     capes = {
@@ -158,7 +158,7 @@ def show_main_page():
             continue
 
         image = PilImage.open(image_path)
-        image = image.resize((15, 15), PilImage.LANCZOS)  # Increase the image size
+        image = image.resize((100, 50), PilImage.LANCZOS)  # Adjust the image size
         photo = ctk.CTkImage(image)
 
         frame_inner = ctk.CTkFrame(master=scrollable_frame)
@@ -210,4 +210,3 @@ cherry_blossom_button.pack(pady=10)
 
 # Run the application
 app.mainloop()
-
