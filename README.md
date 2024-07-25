@@ -29,8 +29,9 @@ Or... You can use my program to change your Cape instantly. Feel Free to Visit -
 
 [!] Your Anti-Virus may go off soly because this is a newly created program.
 
+This is my First "Big" Project!
 Feel free to checkout the source code for free on my GitHub: [https://github.com/Delexoo/Minecraft-Cape-Changer/blob/main/(Source%20Code)%20Minecraft-Cape-Changer
 ](https://github.com/Delexoo/Capes-/blob/main/Capes%2B%2B%20Source%20Code.md)
 Visit my linktree for more! https://linktr.ee/delexo
 
-Thank you for downloading the Minecraft Cape Changer program!
+Thank you for downloading Capes++ Client
